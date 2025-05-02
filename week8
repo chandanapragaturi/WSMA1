@@ -1,0 +1,36 @@
+1. java -jar selenium-server-4.29.0.jar hub
+2. java -jar selenium-server-4.29.0.jar node --detect-drivers true
+
+1st cd where all drivers are in one folder
+
+cd //./..
+
+java -jar "path\selenium-server-4.29.0.jar" hub
+
+Create maven project goto FileNewMaven Project SelectNextselect
+org.apache.maven.archetypes select webappEnter Group Id:week7
+ArtifactId:selenium Package:warFinish. Enter Y you get Build Success in
+console.
+
+Open Pom.xml copy paste below code this all I added dependies and
+plugins. Next Right click ProjectMavenUpdate projectok.
+
+Go to ProjectPropertiesMavenTargeted Runtimesnewselect apache
+tomcat 9nextbrowse apache folder addressfinishclick check box
+apache 9 and applyapply and close
+
+
+Adding TestNG in Eclipse.
+Go to helpInstall New SoftwareAddEnter Name:TestNG,
+Location:https://testng.org/testing-eclipse-update-site/Add.
+Select TestNG check boxNextNextI acceptFinish
+Trust SelectedTrust Selected.
+
+
+Create Folder inside src test inside java.java folder select build path
+current folder.Right click that foldernewothersclassnextgive
+package name and class nameok
+
+ame page right clickrunTestNG Finally its run test passes.
+
+
