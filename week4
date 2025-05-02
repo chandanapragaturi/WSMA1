@@ -1,0 +1,63 @@
+sudo apt update 
+
+sudo apt install ansible
+
+sudo apt install openssh-client
+
+sudo apt install openssh-server
+
+cd ~/.ssh/ 
+
+ls
+
+cd
+
+cd-
+
+cd
+
+ open puttygen software -> click on load -> select as all files -> select ansible.pem(your key
+pair) -> click on save and -> click on save private key and save the file with .ppk extension
+
+
+Now open winCP software -> it will ask for host name just copy and paste your
+ansibleinstance Ip-> In the place of user name type Ubuntu -> click on advance -> select authentication
+-> in the place of private key select your downloaded .ppk file - > click on Ok -> click on Login. (it
+will connect to your server and show a Ubuntu wincp window)
+Note: follow 1 -> 2 -> 3 -> 4 -> 5 arrow
+
+cd
+
+ls
+
+cd key/
+
+cp ansible.pem ~/.ssh/
+
+ ls ~/.ssh/ 
+
+mkdir ansible-script
+
+cd ansible-script/ 
+
+vi inventory.ini
+
+vi playbook.yml
+
+ansible-playbook –i playbook.yml
+
+ansible-playbook –i inventory.ini playbook.yml
+
+cd
+
+cd ~/.ssh/ 
+
+
+chmod 400 ~/.ssh/ansible.pem
+
+ls –l ~/.ssh/
+
+ansible-playbook –i inventory.ini playbook.yml
+
+
+
